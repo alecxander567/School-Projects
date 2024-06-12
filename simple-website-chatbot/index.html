@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta nsme="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>Project-ChatBot</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCqAYKr66ryhZqW57spN1XR6TDKf_ayUX4">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />	
+		<link rel="icon" type="img/x-icon" href="img/chatbot-logo.jpg">
+	</head>
+	<body>
+         
+         <input class="show-btn" id="show" type="checkbox">
+         <label for="show" class="show-btn">
+         	Ask a question
+         </label>
+		<section id="banner">
+			<img src="img/spct.jpg" class="logo">
+			<div class="banner-text">
+				<p>"To Christ Through Mary"</p>
+				<h1>St.Peter's College of Toril, Inc.</h1>
+				<div class="banner-btn">
+					
+				</div>
+			</div>
+		</section>
+		<div id="sideNav">
+			<nav>
+				<ul>
+					<li><a href="#about">About SPCT</a></li>
+					<li><a href="#programs">Programs</a></li>
+					<li><a href="#about">Visit Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="menuBtn">
+			<span class="material-symbols-outlined">menu</span>
+		</div>
+          <!--Programs-->
+		<section id="about">
+			<div class="title-text">
+				<p>About SPCT</p>
+				<h1>Why Choose Us?</h1>
+				<hr>
+			</div>
+			<div class="about-box">
+				<div class="staff">
+					<h1>About the school</h1>
+					<div class="staff-desc">
+						<div class="staff-icon"></div>
+						<div class="staff-text">
+							<p>St. Peter’s College of Toril, Inc. (SPCT) is a private Filipino Catholic school in Toril, Davao City. It is owned and administered by the Presentation of Mary Sisters, and guided by foundress St. Marie Rivier.
+
+SPCT is a member of the Catholic Educational Association of the Philippines (CEAP), the largest organized group of Catholic schools in the country, with about 1,194 members as instituted in 1941.</p>
+						</div>
+					</div>
+						<h1>Visit Us</h1>
+					<div class="staff-desc">
+						<div class="staff-icon"></div>
+						<div class="staff-text">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.8985152249425!2d125.49701157357136!3d7.02121421718242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f90c387da807b3%3A0x95a69830504bfe48!2sSt.%20Peter&#39;s%20College%20of%20Toril%2C%20Inc.!5e0!3m2!1sen!2sph!4v1707522165847!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="staff-img">
+					<img src="img/st.peter.jpg">
+				</div>
+		</section>
+		<section id="programs">
+			<div class="title-text">
+				<p>PROGRAMS</p>
+				<h1>We offer Programs such as</h1>
+				<hr>
+				<div class="program-box">
+					<div class="program">
+						<img src="img/bsed.jpg" class="bsed">
+						<div class="overlay"></div>
+						<div class="program-desc">
+							<h3>Bachelor's of Secondary Education</h3>
+							<hr>
+							<p>
+								Career Path Opportunities:<br><br>*Teacher(Secondary Education)<br><br>*Special Education Teacher<br><br>*School Guidance<br><br>*Education Administrator<br><br>*Education Researcher<br><br>*Corporate Trainer
+							</p>
+						</div>
+					</div>
+					<div class="program">
+						<img src="img/nelson.jpg">
+						<div class="overlay"></div>
+						<div class="program-desc">
+						<h3>Bachelor's of Science in Information Technology</h3>
+						<hr>
+						<p>Career Path Opportunities:<br><br>*Software Developer<br><br>*Network Administrator<br><br>*System Analyst<br><br>*Database Aministrator<br><br>*IT Technician<br><br>*IT Consultant<br><br>*System Administrator<br><br>*Network Engineer<br><br></p>
+					</div>
+				</div>
+					<div class="program">
+						<img src="img/bsba.jpg">
+						<div class="overlay"></div>
+						<div class="program-desc">
+						<h3>Bachelor's of Science in Business Administration</h3>
+						<hr>
+						<p>Career Path Opportunities:<br><br>*Accountant<br><br>*Business Analyst<br><br>
+							*Manager<br><br>*Human Resource Specialist<br><br>*Sales Manager<br><br>*Financial Planner<br><br>
+						</p>
+					</div>
+				</div>
+		
+	</section>
+	<div class="chatbot">
+		<header>
+			<h2>Chatbot</h2>
+		</header>
+		<div id="chatbox">
+			<span class="material-symbols-outlined">robot_2</span>
+			<ul class="chat ongoing">
+				<li>Hi, how can I help you?</li>
+			</ul>
+		</div>
+		<input type="text" placeholder="Ask a question..." id="userInput">
+		<button class="send-btn" onclick="sendMessage()"><span class="material-symbols-outlined">
+send
+</span></button>
+	</div>
+
+		<script src="script.js"></script>
+		<script src="script2.js"></script>
+
+		
+
+	</body>
+</html>
