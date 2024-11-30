@@ -1,0 +1,382 @@
+/* Base Styles (Unchanged) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 100vh;
+}
+nav {
+    box-shadow: 0 0 1px white;
+}
+.navbar-item, .nav-item {
+    color: white;
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 50px;
+    font-weight: 900;
+}
+nav h1 {
+    color: white;
+    font-size: 30px;
+    margin-left: -50px;
+    font-weight: 900;
+}
+.icon-nav {
+    width: 50px;
+    height: 50px;
+}
+#container {
+    background: #040404;
+    border-radius: 10px;
+    width: 550px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    visibility: visible;
+    padding: 15px;
+}
+header {
+    padding: 10px;
+    font-weight: 900;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+.listIcon {
+    width: 30px;
+    height: 30px;
+}
+.input {
+    border: none;
+    border-bottom: 2px solid white;
+    width: 75%;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    background: transparent;
+    margin: 20px 20px;
+}
+#addTask {
+    border-radius: 10px;
+    background: #ec1203;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+}
+#addTask:hover {
+    background: transparent;
+}
+#mytask {
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+#checkbox {
+    display: flex;
+    gap: 10px;
+}
+.markDone {
+    text-decoration: line-through;
+    color: grey;
+}
+.delBtn {
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    right: 400px;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    padding: 10px 10px;
+    margin: auto;
+}
+.delBtn img {
+    position: relative;
+    top: -10px;
+}
+#container2 {
+    background: #040404;
+    border-radius: 10px;
+    width: 550px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    top: 100px;
+    right: 390px;
+}
+#addTask2 {
+    border-radius: 10px;
+    background: #ec1203;
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+}
+#addTask2:hover {
+    background: transparent;
+}
+.delBtn2 {
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    background: transparent;
+    right: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.delBtn2 img {
+    position: relative;
+    top: -5px;
+}
+#time {
+    background: transparent;
+    color: white;
+    margin-left: 20px;
+}
+#container3 {
+    background: #040404;
+    padding: 20px;
+    padding-left: 30px;
+    width: 750px;
+    height: auto;
+    border-radius: 10px;
+    visibility: hidden;
+    margin: auto;
+    margin-top: -150px;
+}
+.reminder header {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+    background: transparent;
+    text-align: left;
+}
+.reminder-container {
+    display: flex;
+    gap: 20px;
+}
+.inputforreminder {
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    width: 450px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.date {
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    width: 100px;
+    border-radius: 10px;
+}
+.btn-reminder {
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    background: #ec1203;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.btn-reminder:hover {
+    border: 2px solid white;
+    background: transparent;
+}
+.list-of-reminder {
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.reminders {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    list-style: none;
+}
+.reminders span {
+    flex-grow: 1;
+    font-size: 20px;
+}
+.btn-edit {
+    background-color: #ec1203;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    right: 350px;
+}
+.btn-edit:hover {
+    background-color: transparent;
+    border: 2px solid white;
+}
+.btn-delete {
+    background: transparent;
+    margin-left: 5px;
+    padding: 5px;
+    position: absolute;
+    right: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 760px) {
+
+    .icon-nav{
+        margin-right: 120px;
+    }
+    #container {
+        width: 90%; 
+        margin: 15px 15px;
+        padding: 20px;
+        position: absolute;
+    }
+    #page1{
+        margin-top: 15px;
+    }
+
+    #page2 {
+        opacity: 0;
+    }
+    #page3{
+        margin-right: 50px;
+        margin-top: 20px;
+    }
+    
+    #container3 {
+        width: 90%; 
+        margin-left: 15px;
+        margin-top: 50px;
+        padding: 20px;
+        position: fixed;
+    }
+    .reminders {
+        font-size: 10px;
+        color: white;
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    .btn-edit {
+        background-color: #ec1203;
+        color: white;
+        margin-left: 10px;
+        border: none;
+        padding: 4px;
+        border-radius: 10px;
+        position: absolute;
+        right: 80px;
+    }
+
+    .btn-delete {
+        background: transparent;
+        margin-left: 5px;
+        padding: 4px;
+        position: absolute;
+        right: 40px;
+        border-radius: 10px;
+    }
+
+    .reminders span {
+        flex-grow: 1;
+        font-size: 15px;
+    }
+
+
+    nav h1 {
+        margin-left: 0;
+        font-size: 20px;
+    }
+
+    .navbar-item, .nav-item {
+        gap: 5px;
+        margin-right: 10px;
+        font-size: 14px; 
+    }
+
+    .input {
+        width: 240px; 
+        font-size: 15px;
+    }
+
+    #addTask, #addTask2 {
+        font-size: 15px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .reminder-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inputforreminder {
+        width: 100%; 
+    }
+
+    .date {
+        width: 100%; 
+    }
+
+    .btn-reminder {
+        width: 100%; 
+    }
+
+    .delBtn, .delBtn2 {
+        width: auto; 
+        height: auto; 
+        padding: 5px 10px; 
+        position: absolute; 
+        right: 40px;
+        display: inline-block; 
+        border-radius: 5px; 
+        text-align: center; 
+    }
+
+    .delBtn img, .delBtn2 img {
+        width: 10px; 
+        height: 10px;
+    }
+
+    #mytask {
+        font-size: 15px;
+        color: white;
+        margin-left: 20px;
+        display: block;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    #checkbox {
+        display: inline-block;
+    }
+  
+    .icon{
+        width: 20px;
+        height: 20px;
+    }
+}
